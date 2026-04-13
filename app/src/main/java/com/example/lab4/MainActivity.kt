@@ -60,3 +60,45 @@ fun Title(text: String) {
         modifier = Modifier.padding(top = 16.dp, bottom = 8.dp)
     )
 }
+
+// 🔘 Button
+@Composable
+fun ExampleButton() {
+    Button(onClick = {}) {
+        Text("Button")
+    }
+}
+
+// 📝 TextField
+@Composable
+fun ExampleTextField() {
+    var text by remember { mutableStateOf("") }
+
+    TextField(
+        value = text,
+        onValueChange = { text = it },
+        label = { Text("Nombre") }
+    )
+}
+
+// ☑ Checkbox
+@Composable
+fun ExampleCheckbox() {
+    var checked by remember { mutableStateOf(false) }
+
+    Checkbox(
+        checked = checked,
+        onCheckedChange = { checked = it }
+    )
+}
+
+// 🔄 Switch
+@Composable
+fun ExampleSwitch() {
+    var state by remember { mutableStateOf(false) }
+
+    Switch(
+        checked = state,
+        onCheckedChange = { state = it }
+    )
+}
