@@ -64,8 +64,13 @@ fun Title(text: String) {
 // 🔘 Button
 @Composable
 fun ExampleButton() {
-    Button(onClick = {}) {
-        Text("Button")
+    Button(
+        onClick = {},
+        colors = ButtonDefaults.buttonColors(
+            containerColor = MaterialTheme.colorScheme.primary
+        )
+    ) {
+        Text("Button mejorado")
     }
 }
 
