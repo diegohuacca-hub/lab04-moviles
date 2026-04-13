@@ -102,3 +102,56 @@ fun ExampleSwitch() {
         onCheckedChange = { state = it }
     )
 }
+
+import androidx.compose.foundation.Image
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
+
+// 🖼 Image
+@Composable
+fun ExampleImage() {
+    Image(
+        painter = painterResource(id = R.drawable.max),
+        contentDescription = "Imagen",
+        modifier = Modifier.size(80.dp)
+    )
+}
+
+// 🪪 Card
+@Composable
+fun ExampleCard() {
+    Card(modifier = Modifier.padding(8.dp)) {
+        Text("Esto es una Card", modifier = Modifier.padding(16.dp))
+    }
+}
+
+// ⏳ Progress
+@Composable
+fun ExampleProgress() {
+    CircularProgressIndicator()
+}
+
+// ↔ Row
+@Composable
+fun ExampleRow() {
+    Row {
+        Text("Item 1")
+        Spacer(modifier = Modifier.width(10.dp))
+        Text("Item 2")
+    }
+}
+
+// ⬇ Column
+@Composable
+fun ExampleColumn() {
+    Column {
+        Text("Elemento A")
+        Text("Elemento B")
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun PreviewMain() {
+    MainScreen()
+}
