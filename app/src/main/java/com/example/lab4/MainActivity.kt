@@ -86,10 +86,13 @@ fun ExampleTextField() {
 fun ExampleCheckbox() {
     var checked by remember { mutableStateOf(false) }
 
-    Checkbox(
-        checked = checked,
-        onCheckedChange = { checked = it }
-    )
+    Row(verticalAlignment = Alignment.CenterVertically) {
+        Checkbox(
+            checked = checked,
+            onCheckedChange = { checked = it }
+        )
+        Text("Acepto términos")
+    }
 }
 
 // 🔄 Switch
