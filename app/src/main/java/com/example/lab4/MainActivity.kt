@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
+// Cambio realizado por cuenta 2 - diegodev5
 @Composable
 fun MainScreen() {
     LazyColumn(modifier = Modifier.padding(16.dp)) {
