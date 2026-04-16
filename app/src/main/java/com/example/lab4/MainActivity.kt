@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
+// Cambios combinados de ambos desarrolladores (cuenta 1 y cuenta 2)
 @Composable
 fun MainScreen() {
     LazyColumn(modifier = Modifier.padding(16.dp)) {
@@ -110,7 +110,7 @@ fun ExampleSwitch() {
         onCheckedChange = { state = it }
     )
 }
-// Cambio desde cuenta 1
+
 import androidx.compose.foundation.Image
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
